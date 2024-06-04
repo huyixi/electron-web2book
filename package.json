@@ -1,0 +1,36 @@
+{
+  "name": "my-electron-app",
+  "version": "1.0.0",
+  "description": "my-electron-app",
+  "main": "dist/main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "electron .",
+    "dev": "concurrently \"vite\" \"pnpm run start\"",
+    "dev:electron": "concurrently \"vite\" \"pnpm run start\"",
+    "dev:web": "vite",
+    "build": "tsc && vite build"
+  },
+  "author": "huyixi",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/electron": "^1.6.10",
+    "@types/node": "^20.14.1",
+    "@types/react": "^18.3.3",
+    "@types/react-dom": "^18.3.0",
+    "electron": "^30.0.9",
+    "html-webpack-plugin": "^5.6.0",
+    "ts-loader": "^9.5.1",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.4.5",
+    "vite": "^5.2.12",
+    "webpack": "^5.91.0",
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^5.0.4"
+  },
+  "dependencies": {
+    "@vitejs/plugin-react": "^4.3.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  }
+}
